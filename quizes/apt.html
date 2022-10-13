@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js" async></script>
+    <title>MyQuiz</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+    <!------------------------------------------------------------------------------------------------------------->
+    <div class="in"> 
+        <div class="row col-md-6 col-aligncenter">
+          <img src="enter.png" alt="" id="i" class="col-md-6 col-aligncenter d-flex justify-content-center" style="border: 2px solid black;">
+            <div class="mt-0">
+                <label for="name" id="n">Name:</label>
+                <input type="text" class="form-control" placeholder="Enter your name" id="name">
+              
+              <button type="button" id="b"class="btn btn-primary nam justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Enter
+              </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to Quizer</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                    1.This quiz contains 5 questions.
+                    <br>
+                    2.Each question has 4 options.
+                    <br>
+                    3.The previous question cant be done twice.
+                    <br>
+                    4.Click on Start to enter into the quiz.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="start">Start</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!------------------------------------------------------------------------------------->
+
+        
+    <div class="containerr">
+       
+        <div class="progress">
+            <div class="pr1"></div>
+        </div>
+        <div class="row">
+          <h2 id="question">qqqqq</h2>
+        </div>
+        <div class="row">
+          <div class="optionlist">
+            <div class="option">
+              <button type="button" class="btn btn-primary btn-o " data-toggle="button" aria-pressed="false" autocomplete="off">
+                <input type="radio" name="k" id="op1" value="a">
+            <label for="op1" class="h3">zzzzzzz</label>
+              </button>
+            </div>
+
+            <div class="option">
+              <button type="button" class="btn btn-primary btn-o" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <input type="radio" name="k" id="op2" value="b">
+            <label for="op2" class="h3">zzzzzzz</label>
+              </button>
+            </div>
+
+            <div class="option">
+              <button type="button" class="btn btn-primary btn-o" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <input type="radio" name="k" id="op3" value="c">
+            <label for="op3" class="h3">zzzzzzz</label>
+              </button>
+            </div>
+
+            <div class="option">
+              <button type="button" class="btn btn-primary btn-o" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <input type="radio" name="k" id="op4" value="d">
+            <label for="op4" class="h3">zzzzzzz</label>
+              </button>
+            </div>
+
+          </div>
+            
+        </div>
+        
+        <div class="row">
+        <button type="button" class="btn btn-info ml-5" id="next">Next</button>
+      </div>
+    </div>
+    <div class="subcont">
+      <div class="semi">
+      <div class="row">
+        <div class="col text-center m-3">
+          <h1>Welldone you completed this quiz!!!</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center m-3">
+          <h5>Click on submit to view your score!!</h5>
+        </div>
+      </div>
+    </div>
+    <button id="submit" class="btn text-center h3">SUBMIT</button>
+      <div class="res">
+        <img src="result.png" alt="">
+        <span id="user"></span>
+        <p id="score">0</p>
+      </div>
+    </div>
+    <script src="apt.js"></script>
+</body>
+</html>

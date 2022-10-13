@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js" async></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Quizer</title>
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" style="font-family: papyrus; font-weight: bold; color: white;font-size: 30px;" href="#"><img src="q.png" >uizer</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+                <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item left">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item left">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item left">
+                    <a class="nav-link" href="#cards">Quizes</a>
+                  </li>
+                  <li class="nav-item left">
+                    <a class="nav-link" href="#">CommingSoon</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <div id="banner">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="title" style=" font-size: 60px; font-family: 'Courier New', Courier, monospace; font-weight: bold;">YOUR ONE STOP DESTINATION. . .</p>
+            <p style="font-size: 20px;">It is one stop for all your knowledge blocks. Take a tour on Quizer to test your skills.</p>
+          </div>
+          <div class="col-md-6 text-center ">
+            <img src="quiz1.png" alt="" class="img-fluid ">
+          </div>
+        </div>
+      </div>
+      <img src="wave1.png" alt="" class="bottom-img">
+    </div>
+    <!--cards ---------------------------------------------------------------------------------------------------------->
+    <h1 class="m-3 p-3 ">Quizes</h1>
+    <section id="cards" class="margin-left" style="margin-bottom: 50px;">
+      <div class="container ">
+        
+        <div class="row ">
+            <div class="col-md-3">
+                <div class="card padding" id ="h">
+                 
+                    <img  src="webdev.png" alt="">
+                    
+                    <div class="card-body">
+                        <h4 class="card-title bold">Web Technologies</h4>
+                        <p>This covers the topics such as Html, Css, Javascript and Bootstrap. Enter the Webtechnologies quiz now!! </p>
+                        <button class="btn btn-dark" onclick="location.href='quizes/webTech.html'">Enter</button>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card padding"id ="h">
+                    <img src="logical.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title bold">Aptitude&Reasoning</h4>
+                        <p>This covers the topics of Aptitude&Reasoning. Enter the Aptitude&Reasoning quiz now!! </p>
+                        <button class="btn btn-dark" onclick="location.href='quizes/apt.html'">Enter</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card padding" id ="h">
+                  <img src="python.png" alt="">
+                  <div class="card-body">
+                      <h4 class="card-title bold">Python</h4>
+                      <p>This Python quiz mainly focuses on the fundamentals of python . Enter the  Python quiz now!! </p>
+                      <button class="btn btn-dark" onclick="location.href='quizes/python.html'">Enter</button>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card padding" id ="h">
+                <img src="cphoto.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title bold">C-Language</h4>
+                    <p>This C-language quiz mainly focuses on the fundamentals of C. Enter the  C-language quiz now!! </p>
+                    <button class="btn btn-dark" onclick="location.href='quizes/c.html'">Enter</button>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="footer">
+      <img src="wave2.png" alt="">
+    </section>
+    <script src="index.js"></script>
+    
+</body>
+</html>

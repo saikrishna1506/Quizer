@@ -1,0 +1,72 @@
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    padding: 0 !important;
+}
+.navbar-brand img{
+   height: 40px;
+   padding-left: 20px;
+}
+.navbar-nav li a {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/*banner*/
+#banner{
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    color: #fff;
+    padding-top: 5%;
+}
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.bottom-img{
+    width: 100%;
+}
+.left{
+    padding-left: 50px;
+}
+.padding{
+    padding: 0px;
+}
+.margin-left{
+    margin-left: 25px;
+}
+#footer{
+    
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    color: #fff;
+    
+}
+#footer img{
+    width: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+#h{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#h:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card:hover {
+    transform: scale(1.1);
+  }
+.card {
+    transition: transform 0.2s ease;
+}
+ul li a:hover{
+    color: black;
+    background-color: black;
+    border-radius: 20px;
+}
