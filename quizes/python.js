@@ -11,9 +11,11 @@ var subcont=document.querySelector(".subcont");
 var namee=document.querySelector("#name");
 var username=document.querySelector("#user");
 var semi=document.querySelector(".semi");
+var showans=document.querySelector("#showans");
+var ancontainer=document.querySelector(".shans");
+var dis=document.querySelectorAll(".a");
 
-
-
+const arrayans=[];
 
 //quiz data
 const aptquiz=[{
@@ -91,9 +93,11 @@ question.innerHTML=aptquiz[quesno].questiondata;
 
 //-----------------------------------------------------------------------------------------------------
 
+
 next.addEventListener("click",() => {
- 
     const data = aptquiz[quesno];
+    arrayans.push(cor(aptquiz[quesno].correct));
+    
     
      const ans = getAnswer()
      if (data.correct === ans) {
@@ -129,6 +133,7 @@ const getAnswer = () => {
         (inputEl) => {
             if (inputEl.checked) {
                 ans = inputEl.value;
+
             }
         }
     )
@@ -142,8 +147,10 @@ submit.addEventListener("click",() => {
     semi.style.display="none";
     score.style.display="block";
     username.innerHTML=`${namee.value}, you got `
-    score.innerHTML=` Correct:  ${correct}<br/> Incorrect: ${incorrect}`
+    score.innerHTML=` Correct: ${correct}<br/> Incorrect: ${incorrect}`
     submit.style.display="none";
+    
+    showans.style.display="block";
 });
 
 //reset---------------------------------------------------------------------------
@@ -154,6 +161,40 @@ submit.addEventListener("click",() => {
             }
         )
         }
+ //-------------------------------------------------------------------------
+
+
+ showans.addEventListener("click",()=>{
+    username.style.display="none";
+    showans.style.display="none";
+    score.style.display="none";
+    ancontainer.style.display="block";
+    dis[0].innerHTML="1)."+arrayans[0];
+    dis[1].innerHTML="2)."+arrayans[1];
+    dis[2].innerHTML="3)."+arrayans[2];
+    dis[3].innerHTML="4)."+arrayans[3];
+    dis[4].innerHTML="5)."+arrayans[4];
+    
+    
+
+ });
+
+
+function cor(n){
+    if(n=="a"){
+        return aptquiz[quesno].a
+    }
+    else if(n=="b"){
+        return aptquiz[quesno].b
+    }
+    else if(n=="c"){
+        return aptquiz[quesno].c
+    }
+    else if(n=="d"){
+        return aptquiz[quesno].d
+    }
+}
+
 
 load(quesno);
 //-___--------------------------------------------------------------------------------------------
