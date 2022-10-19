@@ -11,9 +11,11 @@ var subcont=document.querySelector(".subcont");
 var namee=document.querySelector("#name");
 var username=document.querySelector("#user");
 var semi=document.querySelector(".semi");
+var showans=document.querySelector("#showans");
+var ancontainer=document.querySelector(".shans");
+var dis=document.querySelectorAll(".a");
 
-
-
+const arrayans=[];
 
 //quiz data
 const aptquiz=[{
@@ -49,7 +51,7 @@ const aptquiz=[{
     correct:"a",
 },
 {
-    questiondata:"It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?",
+   questiondata:"It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?",
     a:"Sunday",
     b:"Saturday",
     c:"Friday",
@@ -91,9 +93,11 @@ question.innerHTML=aptquiz[quesno].questiondata;
 
 //-----------------------------------------------------------------------------------------------------
 
+
 next.addEventListener("click",() => {
- 
     const data = aptquiz[quesno];
+    arrayans.push(cor(aptquiz[quesno].correct));
+    
     
      const ans = getAnswer()
      if (data.correct === ans) {
@@ -129,6 +133,7 @@ const getAnswer = () => {
         (inputEl) => {
             if (inputEl.checked) {
                 ans = inputEl.value;
+
             }
         }
     )
@@ -144,6 +149,8 @@ submit.addEventListener("click",() => {
     username.innerHTML=`${namee.value}, you got `
     score.innerHTML=` Correct: ${correct}<br/> Incorrect: ${incorrect}`
     submit.style.display="none";
+    
+    showans.style.display="block";
 });
 
 //reset---------------------------------------------------------------------------
@@ -154,82 +161,40 @@ submit.addEventListener("click",() => {
             }
         )
         }
+ //-------------------------------------------------------------------------
+
+
+ showans.addEventListener("click",()=>{
+    username.style.display="none";
+    showans.style.display="none";
+    score.style.display="none";
+    ancontainer.style.display="block";
+    dis[0].innerHTML="1)."+arrayans[0];
+    dis[1].innerHTML="2)."+arrayans[1];
+    dis[2].innerHTML="3)."+arrayans[2];
+    dis[3].innerHTML="4)."+arrayans[3];
+    dis[4].innerHTML="5)."+arrayans[4];
+    
+    
+
+ });
+
+
+function cor(n){
+    if(n=="a"){
+        return aptquiz[quesno].a
+    }
+    else if(n=="b"){
+        return aptquiz[quesno].b
+    }
+    else if(n=="c"){
+        return aptquiz[quesno].c
+    }
+    else if(n=="d"){
+        return aptquiz[quesno].d
+    }
+}
+
 
 load(quesno);
 //-___--------------------------------------------------------------------------------------------
-/*
-document.querySelector("#submit").addEventListener(
-    "click",
-    function() {
-        const data = aptquiz[quesno]
-        const ans = getAnswer()
-        if (ans === data.correct) {
-            correct++;
-        } else {
-            incorrect++;
-        }
-        quesno++;
-        loadQuestion()
-    }
-    )*/
-
-    
-
-
-/*
-question.innerHTML=aptquiz[quesno].questiondata;
-    opt1.innerHTML=aptquiz[quesno].a;
-    opt2.innerHTML=aptquiz[quesno].b;
-    opt3.innerHTML=aptquiz[quesno].c;
-    opt4.innerHTML=aptquiz[quesno].d;
-
-
-
-
-
-
-
-
-
-
-
-
-let scr=0;
-
-const opt=document.querySelectorAll(".option");
-for(let i=0;i<opt.length;i++){
-    opt[i].setAttribute("onclick","optionselected(this)");
-}
-
-
-function optionselected(answer){
-    let usans= answer.textContent;
-    if(usans === aptquiz[quesno].ans){
-        console.log(aptquiz[quesno].ans);
-        scr++;
-        score.innerHTML=scr;
-    }
-    else{
-        scr=scr;
-        score.innerHTML=scr;
-    }
-    quesno++;
-}
-
-
-
-//adding event to next button
-
-
-next.addEventListener("click",()=>{
-    question.innerHTML=aptquiz[quesno].questiondata;
-    opt1.innerHTML=aptquiz[quesno].opt1data;
-    opt2.innerHTML=aptquiz[quesno].opt2data;
-    opt3.innerHTML=aptquiz[quesno].opt3data;
-    opt4.innerHTML=aptquiz[quesno].d;
-    
-    
-    quesno++;
-})
-
-*/
