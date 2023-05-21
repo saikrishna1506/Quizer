@@ -1,76 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-   
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
 }
-#nav-bar{
-    position: sticky;
-    top: 0;
-    z-index: 10;
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
-.navbar{
-    
-    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-    padding: 0 !important;
+
+.navbar {
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  padding: 0 !important;
 }
-.navbar-brand img{
-   height: 40px;
-   padding-left: 20px;
+
+.navbar-brand img {
+  height: 40px;
+  padding-left: 20px;
 }
+
 .navbar-nav li a {
-    color: #fff !important;
-    font-weight: 600;
+  color: #fff !important;
+  font-weight: 600;
 }
-.containerr{
-    width: 100%;
-    height: 1010px;
-    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
-    
-}
-.content{
-    top: 80%;
-    left: 10%;
-    position: absolute;
-    color: #fff;
-    text-align: center;
-}
-.content p{
-    font-size: 20px;
-}
-.content h1{
-    font-size: 64px;
-    font-weight: 600;
-}
-.content span{
-    color:#330867;
-}
-.content button{
-    margin: 40px;
-}
-.col-md-6 img{
-    width: 800px;
-   
-    
-}
-.col-md-12 h1{
-    color: white;
-    text-align: center;
-    font-size: 64px;
-    font-weight: 600;
 
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
-.col-md-12 span{
-    color:#330867;
-}
-.col-md-12{
-    margin-top: 80px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 300px;
 
+.content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 40px;
 }
-.col-md-12 button{
-    margin-left: 50%;
-    margin-top: 5%;
-    margin-bottom: 1%;
+
+.content p {
+  font-size: 20px;
+}
+
+.content h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.content span {
+  color: #330867;
+}
+
+.content button {
+  margin: 40px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  text-align: center;
+  margin-top: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 300px;
+  padding: 40px;
+}
+
+.text-container h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.text-container span {
+  color: #330867;
+}
+
+.text-container button {
+  margin: 20px auto;
+  display: block;
 }
