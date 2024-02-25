@@ -1,104 +1,136 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*comment*/
+}
 
-#nav-bar{
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Navbar Styles */
+#nav-bar {
     position: sticky;
     top: 0;
     z-index: 10;
 }
-.navbar{
-    
+
+.navbar {
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
     padding: 0 !important;
 }
-.navbar-brand img{
-   height: 40px;
-   padding-left: 20px;
+
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
 }
+
 .navbar-nav li a {
     color: #fff !important;
     font-weight: 600;
 }
 
-/*banner*/
-#banner{
+/* Banner Styles */
+#banner {
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
     color: #fff;
     padding-top: 5%;
+    text-align: center;
 }
-.title{
+
+.title {
     font-size: 40px;
     font-weight: 600;
     margin-top: 100px;
 }
-.bottom-img{
+
+.bottom-img {
     width: 100%;
 }
-.left{
+
+/* Card Styles */
+.left {
     padding-left: 50px;
 }
-.padding{
+
+.padding {
     padding: 0px;
 }
-.margin-left{
+
+.margin-left {
     margin-left: 25px;
 }
-#footer{
-    
+
+.card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: scale(1.03);
+}
+
+.card-body {
+    padding: 20px;
+    height:250px;
+    overflow:hidden;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Footer Styles */
+#footer {
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
     color: #fff;
-    
+    padding: px 0;
+    text-align: center;
 }
-#footer img{
+
+#footer img {
     width: 100%;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-#h{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#h:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.card:hover {
-    transform: scale(1.1);
-  }
-.card {
-    transition: transform 0.2s ease;
-}
-ul li a:hover{
-    color: black;
-    background-color: black;
-    border-radius: 20px;
-}
-.c1{
-    padding: 50px;
-    text-align: center;
-    
-}
-.c1 a{
-    
-    text-decoration: none;
-    margin: 10px;
-    display: block;
-    color: white;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-}
-.c1 h3{
-    font-weight: bold;
-}
-.c1 form input{
-    border-radius: 20px;
-    margin: 30px;
-}
-.c1 p{
-    margin-top: 30px;
-}
-.badge{
-    background-color: #30cfd0;
-    padding: 2px;
-    color: #330867;
-}
-.co2{
-    margin-top: 30px;
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-body{
+        height: auto;
+    }
+    .navbar-brand img {
+        height: 30px; /* Decrease logo size for smaller screens */
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 30px; /* Decrease title font size for smaller screens */
+    }
+
+    .c1 {
+        padding: 30px; /* Decrease padding for smaller screens */
+    }
+
+    .c1 a {
+        margin: 5px; /* Decrease margin for smaller screens */
+        font-size: 18px; /* Decrease font size for smaller screens */
+    }
+
+    .c1 form input {
+        margin: 20px; /* Decrease margin for smaller screens */
+    }
+
+    .c1 p {
+        margin-top: 20px; /* Decrease margin top for smaller screens */
+    }
 }
