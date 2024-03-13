@@ -19,7 +19,7 @@ Quizer provides a diverse collection of quizzes on various topics, ranging from 
 
 ## ⚙️ Installation
 
-Quizer is a web-based platform accessible through any modern web browser. Simply visit [https://www.quizer.com](https://saikrishna1506.github.io/quizapp/) to start exploring and taking quizzes immediately.
+Quizer is a web-based platform accessible through any modern web browser. Simply visit https://saikrishna1506.github.io/Quizer/ to start exploring and taking quizzes immediately.
 
 ## 📣 Feedback and Support
 
