@@ -107,6 +107,9 @@ html,body {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    #i{
+        width: 20px;
+    }
     
     body{
         width:100% !important;
