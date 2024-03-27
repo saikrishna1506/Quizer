@@ -1,6 +1,23 @@
-
+.option {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .row-spacing {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    .option {
+      margin-bottom: 8px; /* Adjust spacing for smaller screens */
+    }
+  
+    .row-spacing {
+      margin-bottom: 16px; /* Adjust spacing for smaller screens */
+    }
+  }
 .containerr{
-    height: 500px;
+    min-height: auto;
     margin: 100px auto;
     width: 70%;
     background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
