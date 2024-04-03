@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WE7BGM4PS5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WE7BGM4PS5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-WE7BGM4PS5');
-</script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="css/bootstrap.css">
+      gtag("config", "G-WE7BGM4PS5");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <script src="js/bootstrap.bundle.js" async></script>
     <title>MyQuiz</title>
     <link rel="stylesheet" href="quiz.css" />
@@ -111,7 +116,7 @@
           <h2 id="question" class="text-center">Question</h2>
         </div>
       </div>
-      <div class="row ">
+      <div class="row">
         <div class="col optionlist">
           <div class="option">
             <button
@@ -168,13 +173,13 @@
       </div>
 
       <div class="row row-spacing">
-        <div class="col-12 col-sm-6 text-center"> <!-- Adjust the column width as needed -->
-            <button type="button" class="btn btn-info" id="next">Next</button>
+        <div class="col-12 col-sm-6 text-center">
+          <!-- Adjust the column width as needed -->
+          <button type="button" class="btn btn-info" id="next">Next</button>
         </div>
-    
-  </div>
+      </div>
     </div>
-    <div class="subcont">
+    <!-- <div class="subcont">
       <div class="semi">
         <div class="row justify-content-center">
           <div class="col text-center m-3">
@@ -202,7 +207,45 @@
         <p class="a"></p>
         <p class="a"></p>
       </div>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="subcont">
+            <div class="semi">
+              <div class="row justify-content-center">
+                <div class="col text-center mt-3">
+                  <h1>Welldone you completed this quiz!!!</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-center mt-3">
+                  <h5>Click on submit to view your score!!</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <button id="submit" class="btn btn-lg">SUBMIT</button>
+            </div>
+            <div class="res text-center mt-3">
+              <img src="result.png" alt="" class="img-fluid" />
+              <span id="user"></span>
+              <p id="score" class="h3">0</p>
+              <button id="showans" class="btn">Show Answers</button>
+            </div>
+            <div class="shans mt-3">
+              <h3 class="text-center">CORRECT ANSWERS</h3>
+              <p class="a"></p>
+              <p class="a"></p>
+              <p class="a"></p>
+              <p class="a"></p>
+              <p class="a"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
     <script src="webTech.js"></script>
   </body>
 </html>
